@@ -1,0 +1,6 @@
+<h2>Your Cart</h2>
+<div *ngFor="let item of cartItems" style="border-bottom: 1px solid #ddd; padding: 0.5rem 0;">
+  {{ item.product.name }} - Quantity: {{ item.quantity }}
+</div>
+
+<button (click)="checkout()">Checkout</button>
